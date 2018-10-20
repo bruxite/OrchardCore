@@ -15,6 +15,7 @@ namespace OrchardCore.ContentFields.ViewModels
 
         [BindNever]
         public IList<ContentPickerItemViewModel> SelectedItems { get; set; }
+        public string HtmlFieldPrefix { get; set; }
     }
 
     public class ContentPickerItemViewModel

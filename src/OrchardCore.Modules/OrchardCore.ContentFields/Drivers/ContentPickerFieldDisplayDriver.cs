@@ -55,6 +55,7 @@ namespace OrchardCore.ContentFields.Fields
                 model.Field = field;
                 model.Part = context.ContentPart;
                 model.PartFieldDefinition = context.PartFieldDefinition;
+                model.HtmlFieldPrefix = context.HtmlFieldPrefix;
 
                 model.SelectedItems = new List<ContentPickerItemViewModel>();
 

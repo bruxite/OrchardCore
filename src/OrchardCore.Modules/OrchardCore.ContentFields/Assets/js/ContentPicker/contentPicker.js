@@ -18,7 +18,7 @@ function initializeContentPickerFieldEditor(elementId, selectedItems, contentIte
             asyncFind: function (query) {
                 var self = this;
                 self.isLoading = true;
-                var searchUrl = tenantPath + '/ContentPicker?part=' + partName + '&field=' + fieldName;                
+                var searchUrl = tenantPath + '/ContentPicker?part=' + partName + '&field=' + fieldName;
                 if (query) {
                     searchUrl += '&query=' + query;
                 }
@@ -26,7 +26,7 @@ function initializeContentPickerFieldEditor(elementId, selectedItems, contentIte
                     res.json().then(function (json) {
                         self.options = json;
                         self.isLoading = false;
-                    })
+                    });
                 });
             },
             onInput: function (value) {
@@ -40,5 +40,5 @@ function initializeContentPickerFieldEditor(elementId, selectedItems, contentIte
                 }
             }
         }
-    })
+    });
 }
